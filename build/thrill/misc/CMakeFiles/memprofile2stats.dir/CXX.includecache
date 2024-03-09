@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nscc-gz/lzy/GaBP/thrill/misc/memprofile2stats.cpp
+algorithm
+-
+iostream
+-
+string
+-
+tuple
+-
+unordered_map
+-
+utility
+-
+vector
+-
+

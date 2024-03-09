@@ -1,0 +1,1 @@
+/usr/bin/g++    -g -O3 -std=c++14 -Wall -Wextra -O3 -DNDEBUG    CMakeFiles/GaBP.dir/GaBP.cpp.o  -o GaBP -rdynamic thrill/thrill/libthrill.a -lmpicxx -lmpi -Wl,-Bstatic -lbz2 -Wl,-Bdynamic -lz thrill/extlib/foxxll/foxxll/libfoxxll.a thrill/extlib/tlx/tlx/libtlx.a -ldl -lnuma -lpthread -lpthread 

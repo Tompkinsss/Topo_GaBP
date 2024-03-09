@@ -1,0 +1,511 @@
+The system is: Linux - 4.14.0-115.el7a.0.1.aarch64 - aarch64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/nscc-gz/lzy/GaBP/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/g++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/nscc-gz/lzy/GaBP/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec4180878170/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec4180878170.dir/build.make CMakeFiles/cmTryCompileExec4180878170.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4180878170.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec4180878170.dir/testCCompiler.c.o   -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec4180878170
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4180878170.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTryCompileExec4180878170.dir/testCCompiler.c.o  -o cmTryCompileExec4180878170 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1995970049/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1995970049.dir/build.make CMakeFiles/cmTryCompileExec1995970049.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1995970049.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1995970049.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1995970049
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1995970049.dir/link.txt --verbose=1
+/usr/bin/gcc     -v CMakeFiles/cmTryCompileExec1995970049.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1995970049 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/gcc
+COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ./configure --with-mpc-lib=/usr/local/lib --with-mpc-include=/usr/local/include --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --enable-checking=release --enable-languages=c,c++ --disable-multilib
+Thread model: posix
+gcc version 7.3.0 (GCC) 
+COMPILER_PATH=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/
+LIBRARY_PATH=/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1995970049' '-rdynamic' '-mlittle-endian' '-mabi=lp64'
+ /usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3b9xgZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTryCompileExec1995970049 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0 -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../.. CMakeFiles/cmTryCompileExec1995970049.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1995970049' '-rdynamic' '-mlittle-endian' '-mabi=lp64'
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec1995970049/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1995970049.dir/build.make CMakeFiles/cmTryCompileExec1995970049.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1995970049.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1995970049.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1995970049]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1995970049.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc     -v CMakeFiles/cmTryCompileExec1995970049.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1995970049 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [Target: aarch64-unknown-linux-gnu]
+  ignore line: [Configured with: ./configure --with-mpc-lib=/usr/local/lib --with-mpc-include=/usr/local/include --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --enable-checking=release --enable-languages=c,c++ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1995970049' '-rdynamic' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3b9xgZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTryCompileExec1995970049 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0 -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../.. CMakeFiles/cmTryCompileExec1995970049.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc3b9xgZ.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1995970049] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtbegin.o] ==> ignore
+    arg [-L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0] ==> dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0]
+    arg [-L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64] ==> dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../..] ==> dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../..]
+    arg [CMakeFiles/cmTryCompileExec1995970049.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0] ==> [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0]
+  collapse library dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64] ==> [/usr/local/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../..] ==> [/usr/local/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0;/usr/local/lib64;/lib64;/usr/lib64;/usr/local/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2826144112/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2826144112.dir/build.make CMakeFiles/cmTryCompileExec2826144112.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2826144112.dir/testCXXCompiler.cxx.o
+/usr/bin/g++     -o CMakeFiles/cmTryCompileExec2826144112.dir/testCXXCompiler.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2826144112
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2826144112.dir/link.txt --verbose=1
+/usr/bin/g++        CMakeFiles/cmTryCompileExec2826144112.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2826144112 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2777747917/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2777747917.dir/build.make CMakeFiles/cmTryCompileExec2777747917.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2777747917.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++     -o CMakeFiles/cmTryCompileExec2777747917.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2777747917
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2777747917.dir/link.txt --verbose=1
+/usr/bin/g++      -v CMakeFiles/cmTryCompileExec2777747917.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2777747917 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/g++
+COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper
+Target: aarch64-unknown-linux-gnu
+Configured with: ./configure --with-mpc-lib=/usr/local/lib --with-mpc-include=/usr/local/include --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --enable-checking=release --enable-languages=c,c++ --disable-multilib
+Thread model: posix
+gcc version 7.3.0 (GCC) 
+COMPILER_PATH=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/
+LIBRARY_PATH=/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2777747917' '-rdynamic' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cct5mRh7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTryCompileExec2777747917 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0 -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../.. CMakeFiles/cmTryCompileExec2777747917.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2777747917' '-rdynamic' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec2777747917/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2777747917.dir/build.make CMakeFiles/cmTryCompileExec2777747917.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2777747917.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++     -o CMakeFiles/cmTryCompileExec2777747917.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec2777747917]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2777747917.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++      -v CMakeFiles/cmTryCompileExec2777747917.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2777747917 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [Target: aarch64-unknown-linux-gnu]
+  ignore line: [Configured with: ./configure --with-mpc-lib=/usr/local/lib --with-mpc-include=/usr/local/include --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib --enable-checking=release --enable-languages=c,c++ --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2777747917' '-rdynamic' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/collect2 -plugin /usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cct5mRh7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTryCompileExec2777747917 /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtbegin.o -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0 -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../.. CMakeFiles/cmTryCompileExec2777747917.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/local/libexec/gcc/aarch64-unknown-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cct5mRh7.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2777747917] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> ignore
+    arg [/lib/../lib64/crti.o] ==> ignore
+    arg [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtbegin.o] ==> ignore
+    arg [-L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0] ==> dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0]
+    arg [-L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64] ==> dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../..] ==> dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../..]
+    arg [CMakeFiles/cmTryCompileExec2777747917.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/crtend.o] ==> ignore
+    arg [/lib/../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0] ==> [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0]
+  collapse library dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../../../lib64] ==> [/usr/local/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0/../../..] ==> [/usr/local/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/local/lib/gcc/aarch64-unknown-linux-gnu/7.3.0;/usr/local/lib64;/lib64;/usr/lib64;/usr/local/lib]
+  implicit fwks: []
+
+
+Performing C++ SOURCE FILE Test THRILL_HAS_MARCH_NATIVE succeded with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3510828903/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3510828903.dir/build.make CMakeFiles/cmTryCompileExec3510828903.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3510828903.dir/src.cxx.o
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -DTHRILL_HAS_MARCH_NATIVE   -march=native -o CMakeFiles/cmTryCompileExec3510828903.dir/src.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3510828903
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3510828903.dir/link.txt --verbose=1
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -DTHRILL_HAS_MARCH_NATIVE    CMakeFiles/cmTryCompileExec3510828903.dir/src.cxx.o  -o cmTryCompileExec3510828903 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test THRILL_CLANG_AUTO_RETURN_DEBUG_INFO succeded with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3551698890/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3551698890.dir/build.make CMakeFiles/cmTryCompileExec3551698890.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3551698890.dir/src.cxx.o
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -DTHRILL_CLANG_AUTO_RETURN_DEBUG_INFO  -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -g   -o CMakeFiles/cmTryCompileExec3551698890.dir/src.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx
+/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx:2:26: warning: unused variable ‘a’ [-Wunused-variable]
+      int main() { A<int> a; return 0; }
+                          ^
+Linking CXX executable cmTryCompileExec3551698890
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3551698890.dir/link.txt --verbose=1
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -DTHRILL_CLANG_AUTO_RETURN_DEBUG_INFO  -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -g    CMakeFiles/cmTryCompileExec3551698890.dir/src.cxx.o  -o cmTryCompileExec3551698890 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+template <typename T> struct A { auto func(int i) { return 42 + i; } };
+     int main() { A<int> a; return 0; }
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2361112461/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2361112461.dir/build.make CMakeFiles/cmTryCompileExec2361112461.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2361112461.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2361112461.dir/CheckIncludeFiles.c.o   -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec2361112461
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2361112461.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTryCompileExec2361112461.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec2361112461 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2981960628/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2981960628.dir/build.make CMakeFiles/cmTryCompileExec2981960628.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2981960628.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2981960628.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2981960628
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2981960628.dir/link.txt --verbose=1
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2981960628.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2981960628 -rdynamic -lpthread 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pipe2 exists passed with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3887132038/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3887132038.dir/build.make CMakeFiles/cmTryCompileExec3887132038.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3887132038.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pipe2   -o CMakeFiles/cmTryCompileExec3887132038.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3887132038
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3887132038.dir/link.txt --verbose=1
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pipe2    CMakeFiles/cmTryCompileExec3887132038.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3887132038 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test TLX_CXX_HAS_CXX17 succeded with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec921391478/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec921391478.dir/build.make CMakeFiles/cmTryCompileExec921391478.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec921391478.dir/src.cxx.o
+/usr/bin/g++    -g -W -Wall -Wextra -fPIC  -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -DTLX_CXX_HAS_CXX17   -std=c++17 -o CMakeFiles/cmTryCompileExec921391478.dir/src.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec921391478
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec921391478.dir/link.txt --verbose=1
+/usr/bin/g++   -g -W -Wall -Wextra -fPIC  -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -DTLX_CXX_HAS_CXX17    CMakeFiles/cmTryCompileExec921391478.dir/src.cxx.o  -o cmTryCompileExec921391478 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test CXX_HAS_FLAGS_WEXTRA succeded with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1829304162/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1829304162.dir/build.make CMakeFiles/cmTryCompileExec1829304162.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1829304162.dir/src.cxx.o
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -DCXX_HAS_FLAGS_WEXTRA   -Wextra -o CMakeFiles/cmTryCompileExec1829304162.dir/src.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1829304162
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1829304162.dir/link.txt --verbose=1
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -DCXX_HAS_FLAGS_WEXTRA    CMakeFiles/cmTryCompileExec1829304162.dir/src.cxx.o  -o cmTryCompileExec1829304162 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test CXX_HAS_TEMPLATE_DEPTH succeded with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1224761847/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1224761847.dir/build.make CMakeFiles/cmTryCompileExec1224761847.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1224761847.dir/src.cxx.o
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -DCXX_HAS_TEMPLATE_DEPTH   -ftemplate-depth=1024 -o CMakeFiles/cmTryCompileExec1224761847.dir/src.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1224761847
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1224761847.dir/link.txt --verbose=1
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -DCXX_HAS_TEMPLATE_DEPTH    CMakeFiles/cmTryCompileExec1224761847.dir/src.cxx.o  -o cmTryCompileExec1224761847 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test CXX_HAS_STD_CXX14 succeded with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec177695253/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec177695253.dir/build.make CMakeFiles/cmTryCompileExec177695253.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec177695253.dir/src.cxx.o
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -ftemplate-depth=1024 -DCXX_HAS_STD_CXX14   -std=c++14 -o CMakeFiles/cmTryCompileExec177695253.dir/src.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec177695253
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec177695253.dir/link.txt --verbose=1
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -ftemplate-depth=1024 -DCXX_HAS_STD_CXX14    CMakeFiles/cmTryCompileExec177695253.dir/src.cxx.o  -o cmTryCompileExec177695253 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2306845522/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2306845522.dir/build.make CMakeFiles/cmTryCompileExec2306845522.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2306845522.dir/CheckIncludeFile.cxx.o
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -ftemplate-depth=1024 -std=c++14    -o CMakeFiles/cmTryCompileExec2306845522.dir/CheckIncludeFile.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTryCompileExec2306845522
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2306845522.dir/link.txt --verbose=1
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -ftemplate-depth=1024 -std=c++14     CMakeFiles/cmTryCompileExec2306845522.dir/CheckIncludeFile.cxx.o  -o cmTryCompileExec2306845522 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test FOXXLL_HAVE_O_DIRECT succeded with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1129377781/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1129377781.dir/build.make CMakeFiles/cmTryCompileExec1129377781.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1129377781.dir/src.cxx.o
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -ftemplate-depth=1024 -std=c++14 -DFOXXLL_HAVE_O_DIRECT   -o CMakeFiles/cmTryCompileExec1129377781.dir/src.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1129377781
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1129377781.dir/link.txt --verbose=1
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -ftemplate-depth=1024 -std=c++14 -DFOXXLL_HAVE_O_DIRECT    CMakeFiles/cmTryCompileExec1129377781.dir/src.cxx.o  -o cmTryCompileExec1129377781 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <unistd.h>
+#include <fcntl.h>
+int main() { return ((int)O_DIRECT) != 0; }
+
+Determining if the mmap exist passed with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2570793329/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2570793329.dir/build.make CMakeFiles/cmTryCompileExec2570793329.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2570793329.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2570793329.dir/CheckSymbolExists.c.o   -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2570793329
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2570793329.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTryCompileExec2570793329.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2570793329 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+File /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mman.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mmap
+  return ((int*)(&mmap))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test FOXXLL_HAVE_LINUXAIO_FILE succeded with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3078970680/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3078970680.dir/build.make CMakeFiles/cmTryCompileExec3078970680.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3078970680.dir/src.cxx.o
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -ftemplate-depth=1024 -std=c++14 -DFOXXLL_HAVE_LINUXAIO_FILE   -o CMakeFiles/cmTryCompileExec3078970680.dir/src.cxx.o -c /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3078970680
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3078970680.dir/link.txt --verbose=1
+/usr/bin/g++    -std=c++1y -g -W -Wall -Wextra -fPIC -Wpedantic -march=native -Wcast-qual -Winit-self -Woverloaded-virtual -Wredundant-decls -W -Wall -pedantic -Wno-long-long -Wextra -ftemplate-depth=1024 -std=c++14 -DFOXXLL_HAVE_LINUXAIO_FILE    CMakeFiles/cmTryCompileExec3078970680.dir/src.cxx.o  -o cmTryCompileExec3078970680 -rdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <unistd.h>
+   #include <sys/syscall.h>
+   #include <linux/aio_abi.h>
+   int main() {
+       aio_context_t context;
+       long r = syscall(SYS_io_setup, 5, &context);
+       return (r == 0) ? 0 : -1;
+   }
+Determining if the function BZ2_bzCompressInit exists in the /usr/local/lib/libbz2.a passed with the following output:
+Change Dir: /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1198697330/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1198697330.dir/build.make CMakeFiles/cmTryCompileExec1198697330.dir/build
+gmake[1]: Entering directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1198697330.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=BZ2_bzCompressInit   -o CMakeFiles/cmTryCompileExec1198697330.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1198697330
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1198697330.dir/link.txt --verbose=1
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=BZ2_bzCompressInit    CMakeFiles/cmTryCompileExec1198697330.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1198697330 -rdynamic -Wl,-Bstatic -lbz2 -Wl,-Bdynamic 
+gmake[1]: Leaving directory `/home/nscc-gz/lzy/GaBP/build/CMakeFiles/CMakeTmp'
+
+

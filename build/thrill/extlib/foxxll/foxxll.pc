@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+includedir=${prefix}/
+libdir=${exec_prefix}/
+
+Name: foxxll
+Description: FOundation of stXXl and thriLL
+URL: http://stxxl.org
+Version: 1.4.99
+Cflags: -I${includedir} 
+Libs: -L${libdir} -lfoxxll 

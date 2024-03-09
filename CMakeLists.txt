@@ -1,0 +1,8 @@
+cmake_minimum_required (VERSION 2.8)
+project (GaBP)
+include_directories("thrill")
+add_subdirectory("thrill")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O3 -std=c++14 -Wall -Wextra")
+link_directories()
+add_executable(GaBP GaBP.cpp)
+target_link_libraries(GaBP thrill)
