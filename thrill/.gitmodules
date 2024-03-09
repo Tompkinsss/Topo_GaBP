@@ -1,0 +1,18 @@
+[submodule "extlib/gtest"]
+	path = extlib/gtest
+	url = https://chromium.googlesource.com/external/googletest
+[submodule "extlib/cereal"]
+	path = extlib/cereal
+	url = https://github.com/USCiLab/cereal.git
+[submodule "extlib/googletest"]
+	path = extlib/googletest
+        url = https://github.com/google/googletest.git
+[submodule "extlib/libs3/libs3"]
+	path = extlib/libs3/libs3
+        url = https://github.com/bji/libs3.git
+[submodule "extlib/tlx"]
+	path = extlib/tlx
+	url = https://github.com/tlx/tlx.git
+[submodule "extlib/foxxll"]
+	path = extlib/foxxll
+	url = https://github.com/stxxl/foxxll.git

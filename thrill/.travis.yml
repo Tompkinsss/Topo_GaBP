@@ -1,0 +1,122 @@
+# Travis-CI build script for Thrill
+
+language: cpp
+
+sudo: false
+dist: bionic
+
+env:
+  global:
+    # LeakSanitizer suppressions
+    - LSAN_OPTIONS="suppressions=$PWD/misc/leak_sanitizer.supp"
+    # die on ThreadSanitizer errors
+    - TSAN_OPTIONS="halt_on_error=1"
+    # change THRILL_TRY_COMPILE_HEADERS cmake setting
+    - THRILL_TRY_COMPILE_HEADERS=ON
+
+matrix:
+  include:
+    # gcc 8.x, Debug & Release, with OpenMPI
+    - env: CMAKE_CC="gcc-8" CMAKE_CXX="g++-8" BUILD_TYPE="Debug" COMPILER_FLAGS="-O1"
+      os: linux
+      addons: &gcc8
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-8
+            - openmpi-bin
+            - libopenmpi-dev
+            - libbz2-dev
+            - libssl-dev
+
+    - env: CMAKE_CC="gcc-8" CMAKE_CXX="g++-8" BUILD_TYPE="Release" COMPILER_FLAGS=""
+      os: linux
+      addons: *gcc8
+
+    # gcc 4.9 with AddressSanitizer, Debug, skip headers for speed
+    - env: CMAKE_CC="gcc-4.9" CMAKE_CXX="g++-4.9" BUILD_TYPE="Debug" COMPILER_FLAGS="-fsanitize=address" THRILL_TRY_COMPILE_HEADERS=OFF
+      os: linux
+      dist: trusty
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+           - g++-4.9
+           - libssl-dev
+
+    # gcc 9 Debug with -O1 and -D_GLIBCXX_DEBUG, skip headers for speed
+    - env: CMAKE_CC="gcc-9" CMAKE_CXX="g++-9" BUILD_TYPE="Debug" COMPILER_FLAGS="-O1 -D_GLIBCXX_DEBUG" THRILL_TRY_COMPILE_HEADERS=OFF
+      os: linux
+      addons: &gcc9
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-9
+            - libbz2-dev
+            - libssl-dev
+
+    # clang (default version), Debug with -O1
+    - env: CMAKE_CC="clang" CMAKE_CXX="clang++" BUILD_TYPE="Release" COMPILER_FLAGS="-O1" BUILD_DOXYGEN="1"
+      os: linux
+      addons: &clang37
+        apt:
+          packages:
+            - libbz2-dev
+            - libssl-dev
+            - doxygen
+            - graphviz
+
+    # # Tests on MacOS randomly fail, unclear if it is Thrill or MacOS
+    # # clang on MacOS only Debug with -O1
+    # - env: CMAKE_CC="clang" CMAKE_CXX="clang++" BUILD_TYPE="Debug" COMPILER_FLAGS="-O1"
+    #   os: osx
+
+before_script:
+
+  # print out some version numbers
+  - $CMAKE_CXX --version
+  - cmake --version
+  - gzip --version || true
+  - xz --version || true
+  - ulimit -a || true
+
+  # enable -Werror on thrill/thrill master branch
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+      COMPILER_FLAGS="$COMPILER_FLAGS -Werror";
+    fi
+
+  - COMPILER_FLAGS="$COMPILER_FLAGS -Werror";
+
+  # configure
+  - mkdir build; cd build
+  - cmake
+      -DCMAKE_BUILD_TYPE="$BUILD_TYPE"
+      -DCMAKE_C_COMPILER="$CMAKE_CC" -DCMAKE_CXX_COMPILER="$CMAKE_CXX"
+      -DCMAKE_C_FLAGS="$COMPILER_FLAGS" -DCMAKE_CXX_FLAGS="$COMPILER_FLAGS"
+      -DTHRILL_BUILD_TESTS=ON
+      -DTHRILL_BUILD_EXAMPLES=ON
+      -DTHRILL_BUILD_EXAMPLES_MORE=ON
+      -DTHRILL_TRY_COMPILE_HEADERS="$THRILL_TRY_COMPILE_HEADERS"
+      -DTHRILL_ON_TRAVIS=ON
+      $CMAKE_ARGS ..
+
+script:
+  # build huge objects with only one thread
+  - make -C examples/suffix_sorting dc3.o
+  - make -C examples/suffix_sorting dc7.o
+  - make -C examples/suffix_sorting prefix_quadrupling.o
+  - make -C examples/k-means k-means_run.cpp.o
+
+  - ctest
+      -DCTEST_SITE:STRING="travis-$TRAVIS_REPO_SLUG"
+      -DCTEST_BUILD_NAME:STRING="$TRAVIS_OS_NAME-$CMAKE_CC-$BUILD_TYPE"
+      -S ../misc/cmake/script.ctest -VV
+
+  # Generate and deploy documentation
+  - cd $TRAVIS_BUILD_DIR
+  - if [ -n "$BUILD_DOXYGEN" -a "$TRAVIS_REPO_SLUG" == "thrill/thrill" -a "$TRAVIS_BRANCH" == "master" ]; then
+      ./misc/doxygen/mk-doxygen-travis.sh;
+    fi

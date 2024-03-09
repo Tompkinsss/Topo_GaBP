@@ -1,0 +1,61 @@
+// -*- mode: c++; mode: visual-line; mode: flyspell; fill-column: 100000 -*-
+/*******************************************************************************
+ * doc/data.dox
+ *
+ * Part of Project Thrill - http://project-thrill.org
+ *
+ * Copyright (C) 2015 Tobias Sturm <mail@tobiassturm.de>
+ *
+ * All rights reserved. Published under the BSD-2 license in the LICENSE file.
+ ******************************************************************************/
+
+namespace thrill {
+namespace data {
+
+/******************************************************************************/
+/** \page layer_data Data Subsystem
+
+The central notion of the data subsystem is an item, which can be serialized and deserialized. All items that are processed by Thrill must be support serialization.  For these items, the data subsystems provides methods to store, retrieve, and transmit very large sets or streams of items efficiently.  The actual implementations of underlying storage and transmission methods may change in the future, but the interfaces should not.
+
+## ByteBlock, Block, BlockWriter, BlockReader, and File
+
+Serialized items are stored in ByteBlock objects, which are (usually equally sized) chunks of memory. Much of the other classes are needed to correctly handle splitting and combining of small and huge items and data types into ByteBlock chunks. This is what BlockWriter and BlockReader do: serialize and deserialize items (or arbitrary datatypes) into Blocks.
+
+An important design goal of this layer is to store serialized items **with zero overhead** in the item steam, which means there are zero extra bytes or bits marking the boundary or sizes of items. Any navigation structure must be held outside of the item sequence. Reading and writing an item sequence is only possible by requiring the serialization to implicitly how long its' items are. But this is easy: fixed sizes are trivial, and strings must be prefixed with their length.
+
+Hence ByteBlocks are consecutive memory bytes containing serialized items. ByteBlocks are usually wrapped in a Block object (referencing the ByteBlock via a shared pointer), and the Block structure contains additional meta-data.
+
+\image html byteblock-file.svg
+
+The meta-data in Block consists of four integers: begin and end for first and last valid bytes, a first item offset, and the number of items *beginning* in the block. These are enough to perform random block-based seeking (which is okay if seeking items is rare), allows artificial shorting of the contents of a Block while sharing the underlying ByteBlock (used for scattering locally), and much more. However, it does not allow fast random seeks to item.
+
+A BlockWriter is parameterized by a BlockSink; it allocates, fills a ByteBlock, and delivers full Blocks to a BlockSink. See the inheritance diagram of BlockSink for available sinks; there are at least: File, BlockQueue, ChannelSink, and DiscardSink.
+
+BlockWriter usually is open and then items are written via \ref BlockWriter::Put() "Put()". There are also a few variants of more low-level Put methods available. Note that BlockWriter has no type template parameter: the PutItem() method will take *any* serializable item.  BlockWriter has two additional signaling methods: \ref BlockWriter::Flush Flush() and \ref BlockWriter::Close Close() . Flush() is only needed when the buffering block should immediately be written to the BlockSink, this obviously incurs half-full blocks. Close() flushes the last block and no more items may be written.
+
+A BlockReader is parameterized by a BlockSource concept class, which delivers Blocks to the Reader. The reader then deserializes items and arbitrary data types from the Blocks, and reads new a Block if a large item extends into it.
+
+The standard loop of a BlockReader consists of testing whether another item can be read via BlockReader::HasNext() and then fetching an item Using BlockReader::Next(). The method Next() must be parameterized with the serializable item to get. Beware that any item types can be mixed together, and that while deserialization they *must* match the serialization done by BlockWriter.
+
+## Storage in a File
+
+The File is a vector of Blocks which represents an infinitely growable data storage. As nothing is infinite in this world (with one exception), the File is mostly kept in RAM, but may spill to disk, or even the disk of another compute node.
+
+File are allocated via \ref api::Context::GetFile and the File object itself contains the vector, there is no pointer indirection or reference counting. To write to the File get a BlockWriter using \ref File::GetWriter and to read from it get a BlockReader using \ref File::GetReader.
+
+## Data Streams
+
+Workers may need to exchange many data elements between each other in an asynchronous fashion. A Stream is a communication context to exchange large amounts of items between workers. Streams may be used by DOps to implemented distributed operations. In MPI lingua, a Stream is an AllToAll collective which streams blocks asynchronously.
+
+Multiple Streams of different distributed operations can exist concurrently. Therefore the Stream objects have to be allocated in a deterministic order via \ref api::Context::GetNewCatStream().
+
+Write to Streams using a BlockWriter from \ref Stream::GetWriters() which delivers writers for all workers!
+
+See the documentation of Stream and StreamMultiplexer on how to read and write to Streams.
+
+*/
+
+} // namespace data
+} // namespace thrill
+
+/******************************************************************************/

@@ -1,0 +1,41 @@
+# build
+build/**
+doxygen-html/**
+doxygen_sqlite3.db
+__pycache__
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# IntelliJ products
+*.idea
+
+# Vim swap files
+*.swp
+
+# YCM files
+*.ycm_*
+*~

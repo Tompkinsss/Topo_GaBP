@@ -1,0 +1,51 @@
+// -*- mode: c++; mode: visual-line; mode: flyspell; fill-column: 100000 -*-
+/*******************************************************************************
+ * doc/common.dox
+ *
+ * Part of Project Thrill - http://project-thrill.org
+ *
+ * Copyright (C) 2015 Timo Bingmann <tb@panthema.net>
+ *
+ * All rights reserved. Published under the BSD-2 license in the LICENSE file.
+ ******************************************************************************/
+
+namespace thrill {
+
+//! Contains many common tools and helpers shared by higher layers. See \ref common.
+namespace common {
+
+/******************************************************************************/
+/** \page layer_common Common Tools and Helpers
+
+The namespace common and tlx namespace contains many common tools and helpers shared by higher layers. Each file or component in common must be usable independently of all others.
+
+- \ref tlx::Logger "LOG and sLOG for development and debugging"
+- \subpage layer_common_stats
+- \ref tlx::CmdlineParser "Command Line Parser"
+- \ref tlx::ThreadPool "A ThreadPool to run many queued jobs concurrently which queue new jobs."
+- \ref tlx::Delegate "A fast delegate replacement for std::function which supports non-copyable objects in a lambda capture."
+
+See the \ref thrill::common "namespace common" and \ref tlx "namespace tlx" for a full list of utilities.
+
+*/
+
+/******************************************************************************/
+/** \page layer_common_stats StatsCounter and StatsTimer for Compile-Out Statistics
+
+When developing time critical algorithms, one often needs timers and counters that should later disabled during production. This usually means that the corresponding timer/counter lines are just removed. If later a bug is found, the timer lines have to be readded.
+
+The StatsCounter and StatsTimer classes provide a solution to this problem: they can be disabled using a boolean template switch, and when disabled, all operations on the object are no-operations. Hence, in production mode they are compiled-out.
+
+See the example in \ref tests/common/stats_timer_test.cpp
+
+and \ref tests/common/stats_counter_test.cpp
+
+\example tests/common/stats_timer_test.cpp
+\example tests/common/stats_counter_test.cpp
+
+ */
+
+} // namespace common
+} // namespace thrill
+
+/******************************************************************************/
